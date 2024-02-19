@@ -1213,7 +1213,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e7ff99;
+  background: #a474e0;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2448,6 +2448,30 @@ embed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+/*添加背景图*/
+body {
+  background: url("images/background.png"); /*自定义的图片*/
+  background-size: 100% 100%; /*拉伸到全屏显示*/
+  background-repeat: no-repeat; /*拒绝重复填充*/
+  background-attachment: fixed; /*固定图层，不随鼠标滚动而滚动*/
+}
+/*文章透明度*/
+.post-block {
+  opacity: 0.9;
+}
+/*侧边框的透明度设置*/
+.sidebar {
+  background-color: transparent;
+  opacity: 0.9;
+}
+/*菜单栏的透明度设置*/
+.header-inner {
+  background: rgba(255,255,255,0.9);
+}
+/*如果设置了本地搜索，设置它的透明度*/
+.popup {
+  opacity: 0.9;
 }
 code {
   color: #ff7600;
